@@ -61,7 +61,7 @@ body {
   position: absolute;
   top: 0;
   right: 1.5rem;
-  z-index: 4;
+  z-index: -1;
 }
 
 .card-2{
