@@ -25,7 +25,6 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   background-color: var(--lightGrayishBlue);
   min-height: 100vh;
-  /* color: var(--white); */
 }
 
 
@@ -38,16 +37,14 @@ body {
 }
 
 .testimonials{
-  /* padding: 25px; */
+  padding: 20px;
   display: grid;
   grid-gap:20px;
 }
 
 .testimonials-cards{
   padding: 20px 28px 22px 25px;
-  border: 2px solid black;
   border-radius: 8px;
-  min-width: 250px;
   font-weight: 600;
   box-shadow: 1.25rem 2.5rem 3.75rem -1;
 }
@@ -127,8 +124,6 @@ body {
   margin-top: 3px;
 }
 
-
-
 /* review paragraph */
 .card-1 , .card-2 ,.card-4{
   color: var(--lightGray);
@@ -140,7 +135,7 @@ body {
 
 .testimonials-bottom p{
   padding-top: 1.125rem;
-  font-size: 0.8125rem;
+  font-size: 0.82rem;
   font-weight: 500;
   opacity: 0.7;
   line-height: 1.125rem;
@@ -155,25 +150,23 @@ body {
     align-items: center;
   }
 
+  .testimonials-cards{
+    padding: 20px 28px 18px 25px;
+
+  }
   .container{
-    max-width: 1500px;
-    /* height: 200px; */
+    max-width: 1200px;
   }
 
 
   .testimonials{
-    grid-template-columns: repeat(4,minmax(14rem, 16rem));
-    grid-template-rows: auto;
-    grid-area: "card-1 , card-1 ,;
-    /* width: 900px; */
-  }
-
-  .testimonials-cards{
-    /* width: 250px; */
+    grid-template-columns: repeat(4, 16.9rem);
+    grid-template-rows: repeat(2 , 16.9rem);
+    grid-gap:12px
   }
 
   .card-1{
-    grid-area: card1;
+    grid-area: 1/1/2/3;
   }
 
   .card-2{
@@ -190,6 +183,16 @@ body {
 
   .card-5 {
     grid-area: 1/4/3/5;
+  }
+
+  .testimonials-bottom h3{
+    margin: 10px 0  0px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .testimonials .card-1::before{
+    right: 3rem;
   }
 }
 .
